@@ -8,50 +8,61 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     background-color: #282824;
+    background-color: #282824;
+    color: #F7F7F2;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .navbar {
+    position: fixed;
     background-color: #EB4406;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 5em;
-    
+    height: 11%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.3em;
+    justify-content: flex-end;
 }
 
 .navbar li {
-    margin-right: 20px;
+    padding: .2em;
 }
 
 .navbar a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
-    color: #F7F7F2;
     font-size: 1.2em;
     font-weight: bolder;
+    padding-right: 15px;
 }
 
 .navbar img {
     height: auto;
     width: 40%;
-    padding-right: 10em;
+    min-width: 210px;
+    max-width: 450px;
+    padding: 0 1em;
 }
 
-.navbar a:hover {
+#homeNav:hover {
     color: #ff6f00;
+    text-decoration: overline;
+}
+
+#companyNav:hover {
+    color: #ff6f00;
+    text-decoration: underline;
 }
 
 .main-content {
@@ -72,8 +83,9 @@ h1, h2, h3 {
 
 .shirt {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -81,6 +93,27 @@ h1, h2, h3 {
     width: 100%;
     max-width: 300px;
     margin: 10px;
+    padding-top: 10px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shirt-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.shirt-details-page {
+    padding: 14%;
+    text-align: center;
 }
 
 .shirt h3 {
@@ -122,11 +155,50 @@ a:hover {
 }
 
 #home h1 {
-    margin-top: 20px; /* Adjust the margin as needed for vertical alignment */
+    margin-top: 20px;
 }
 
 #home img {
-    margin-top: 10px;
-    height: 12em;
-    width: auto;
+    padding-top: 12%;
+    width: 50%;
+    min-width: 100px;
+    max-width: 400px;
+    height: auto;
+}
+
+#shirt-designs h2 {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    font-size: .8em;
+    background-color: #EB4406;
+    color: #F7F7F2;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#company {
+    padding: 7%;
+}
+
+#company h2 {
+    text-align: center;
+}
+
+#info p {
+    text-align: center;
+    padding: 5px;
+}
+
+#info button, #info a {
+    padding: 10px;
 }
