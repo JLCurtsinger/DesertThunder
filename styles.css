@@ -175,7 +175,7 @@ a:hover {
 }
 
 .footer {
-    font-size: .8em;
+    font-size: .75em;
     background-color: #EB4406;
     color: #F7F7F2;
     text-align: center;
@@ -183,11 +183,12 @@ a:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 #company {
-    padding: 7%;
+    padding: 1% 7% 11% 7%;
+    text-align: center;
 }
 
 #company h2 {
@@ -205,8 +206,8 @@ a:hover {
 
 #myBtn {
     position: fixed; /* Fixed/sticky position */
-    bottom: 40px; /* Place the button at the bottom of the page */
-    right: 8px; /* Place the button 30px from the right */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 6px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: 2px solid #555; /* Remove borders */
     background-color: #EB4406; /* Set a background color */
