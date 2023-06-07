@@ -35,7 +35,7 @@ body {
 }
 
 .navbar li {
-    padding: .2em;
+    padding: 1em;
 }
 
 .navbar a {
@@ -184,6 +184,10 @@ a:hover {
     left: 0;
     width: 100%;
     padding: 5px 0;
+}
+
+.footer p {
+    color: rgb(243, 238, 238);
 }
 
 #company {
