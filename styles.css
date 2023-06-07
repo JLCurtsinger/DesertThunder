@@ -96,7 +96,7 @@ h1, h2, h3 {
     padding-top: 10px;
 }
 
-.info {
+#info {
     width: 100%;
     display: flex;
     justify-content: center;
