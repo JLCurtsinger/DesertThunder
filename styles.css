@@ -21,7 +21,7 @@ body {
 .navbar {
     position: fixed;
     background-color: #EB4406;
-    height: 11%;
+    height: 9%;
     width: 100%;
     display: flex;
     justify-content: space-between;
