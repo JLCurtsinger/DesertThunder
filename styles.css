@@ -1,0 +1,138 @@
+body {
+    background-color: #222;
+    color: #EA4C22;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: rgba(185, 65, 25, 1);
+    border-radius: 5px;
+    color: #07221c;
+    /* float: clear; */
+    padding: 2rem;
+    bottom: 2px;
+}
+
+footer img {
+    float: right;
+    padding: 0 .25rem;
+    transform: translateY(-.9rem);
+    width: 2rem;
+}
+
+footer p {
+    float: left;
+    transform: translateY(-2.1rem);
+}
+
+h1 {
+    grid-area: h1;
+    background-color: rgba(0, 29, 33, 0);
+    border-radius: 10px;
+    padding: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+#home img {
+    grid-area: homeImage;
+}
+
+nav {
+    display: inline-flex;
+    width: 100%;
+}
+
+nav a {
+    color: #999;
+    font-weight: 900;
+    text-decoration: none;
+    /* padding: 5px 5px 10px 5px; */
+}
+
+nav a img {
+    width: 60%;
+    /* padding: 10px 5px 5px 10px; */
+}
+
+#navbar {
+    background-image: url(images/navbar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    grid-area: navbar;
+}
+
+#shirts button {
+    background-color: #077b60;
+    color: rgb(161, 255, 103);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px black;
+    padding: .22rem .42rem;
+    margin: 0 .5rem 2rem .5rem;
+}
+
+#shirts img {
+    width: 45%;
+    padding: .9rem;
+}
+
+#shirts img:nth-child(1) {
+    float: left;
+}
+
+#shirts img:nth-child(2) {
+    float: right;
+}
+
+.shirt p {
+    padding-left: 1rem;
+    color: #ea4d22c8;
+}
+
+@media screen and (min-width: 650px) {
+    #about h2 {
+        padding-top: 20rem;
+    }
+
+    body {
+        grid-template-areas: 
+        "header header"
+        "home h1"
+        "about about"
+        "shirts shirts"
+        "footer footer";
+    }
+
+    h1 {
+        float: right;
+        text-align: center;
+        width: 50%;
+        font-size: 29px;
+    }
+
+    #home {
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+
+    nav a:nth-child(1) {
+        transform: translateY(-1rem);
+        transform: translateX(3.5rem);
+        /* margin-top: -1rem; */
+        margin: 1rem 0 3rem 0;
+    }
+
+    nav a:nth-child(2) {
+        margin-top: 2.2rem;
+    }
+
+    nav a:nth-child(3) {
+        margin-top: 2rem;
+    }
+}

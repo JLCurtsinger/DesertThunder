@@ -1,0 +1,3 @@
+# DESERT THUNDER CLOTHING CO.
+Official BETA version of the website for the DESERT THUNDER CLOTHING COMPANY.
+ 
